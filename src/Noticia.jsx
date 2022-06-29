@@ -1,18 +1,10 @@
-import { useState } from "react";
-import Button from "./Button";
 import "./Noticia.css";
 
-function Noticia({horario, desc}){
-    const [numeroVizu, setNumeroVizu] = useState(0);
-
-
-    function aumentarVizu(){
-        setNumeroVizu (numeroVizu+1)
-    }
+function Noticia({numeral, desc}){
     
     return(
         <div className="card">
-            <p className="data">{horario}</p>
+            <p className="numeral">{numeral}</p>
             <p className="desc">{desc}</p>
         </div>
     );
